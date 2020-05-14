@@ -31,6 +31,7 @@ services:
       - elasticsearch
     environment:
       - ELASTICSEARCH_URL=http://elasticsearch:9200
+      - LOGSPOUT=ignore
     ports:
       - '5601:5601'
 
@@ -38,6 +39,8 @@ services:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.6.2
     environment:
       - discovery.type=single-node
+      - LOGSPOUT=ignore
     ports:
       - '9200:9200'
       - '9300:9300'
+
