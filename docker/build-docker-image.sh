@@ -1,1 +1,1 @@
-docker build -t lsnova/logspout-logstash:1.0.0 .
+docker build -t lsnova/logspout-logstash:1.1.0 .
